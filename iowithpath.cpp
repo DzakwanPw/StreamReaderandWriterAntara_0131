@@ -12,5 +12,12 @@ int main()
     cout << "Masukkan nama file : " ;
     cin >> NamaFile;
 
+    //membuat file dalam mode menulis
+    ofstream outfile;
+    //menunjuk ke sebuah nama file dengan ekstensi txt
+    outfile.open("C:\\Users\\Dell\\Documents\\contoh\\" + NamaFile + ".txt", ios::out);
+
+    cout << ">= Menulis file, \'q\' untuk keluar" << endl;
+
     
 }
